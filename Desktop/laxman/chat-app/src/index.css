@@ -1,0 +1,141 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+  - FONT SIZES SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  - FONT WEIGHTS:
+    Default : 400,
+    Medium : 500,
+    Semi-Bold : 600,
+    Bold : 700
+  - LINE HEIGHTS:
+    Default: 1;
+    small : 1.05
+    Medium: 1.2
+    Paragraph default : 1.6
+  
+  - Letter spacing
+    0.5px
+    1.2px
+--- 02 COLORS
+  Primary:  #e67e22 , #cf711f
+  Tints: #fdf2e9 , #fae5d3
+  Shades: #cf711f
+  Accents:
+  Greys: #555 , #333
+--- 05 SHADOWS
+--- 06 BORDER-RADIUS
+  Defualt: 9px
+-- 07 WHITESPACE
+  - SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 93.75%;
+  overflow-x: hidden;
+
+  /* not work on safari  */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #dde4f0;
+  overflow-x: hidden;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  letter-spacing: -0.5px;
+  color: #081d34;
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 1.4rem;
+  line-height: 1.05;
+  /* margin-bottom: 3.2rem; */
+  text-transform: uppercase;
+  color: white;
+}
+
+.heading-secondary {
+  font-size: 1.067rem;
+  /* size is 16.005 */
+  /* margin-bottom: 9.6rem; */
+}
+
+/* not used yet */
+
+/* .heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+} */
+
+.subheading {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e67e22;
+  /* text-transform: uppercase; */
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* icon chat */
+/* <i class="fa-regular fa-comment-dots"></i> */
+
+/* activity chat  todo list icon */
+/* <i class="fa-regular fa-clipboard-list"></i> */
+
+/* setting icon */
+/* <i class="fa-regular fa-gear"></i> */
+
+/* logout icon */
+/* <i class="fa-solid fa-arrow-right-from-bracket"></i> */
+
+/* user circle icon */
+/* <i class="fa-regular fa-circle-user"></i> */
+
+/* voice call icon
+<i class="fa-regular fa-phone"></i> */
+
+/* video call icon */
+/* <i class="fa-regular fa-video"></i> */
+
+/* atachement icon */
+/* <i class="fa-regular fa-paperclip"></i> */
+
+/* smily icon */
+/* <i class="fa-regular fa-face-smile"></i> */
+
+/* mice icon */
+/* <i class="fa-regular fa-microphone"></i> */
+
+/* speedo meter 
+<i class="fa-regular fa-gauge"></i> */
+
+/* 1st #DDE4F0 */
+/* 2nd #A8BADD */
+/* 3rd #03060C */
+/*4rth #1E3CBF */
+/* 5th #939DAE */
+/* 6th #485563 */
+/* 7n  #827896 */
