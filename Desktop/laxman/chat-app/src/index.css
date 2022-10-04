@@ -38,7 +38,7 @@
 
 html {
   /* font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
+  /* 15px / 16px = 0.625 = 62.5% */
   font-size: 93.75%;
   overflow-x: hidden;
 
@@ -50,7 +50,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  background-color: #dde4f0;
+  /* background-color: #dde4f0; */
   overflow-x: hidden;
 }
 
@@ -58,84 +58,91 @@ body {
 .heading-secondary,
 .heading-tertiary {
   letter-spacing: -0.5px;
-  color: #081d34;
+  /* color: #081d34; */
   font-weight: 700;
 }
 
 .heading-primary {
-  font-size: 1.4rem;
+  font-size: var(--fs-1);
   line-height: 1.05;
-  /* margin-bottom: 3.2rem; */
   text-transform: uppercase;
   color: white;
 }
 
 .heading-secondary {
-  font-size: 1.067rem;
-  /* size is 16.005 */
-  /* margin-bottom: 9.6rem; */
+  font-size: var(--fs-2);
+  color: var(--primary);
 }
 
-/* not used yet */
+li a {
+  text-decoration: none;
+  color: var(--primary-shade-2);
+}
 
-/* .heading-tertiary {
-  font-size: 3rem;
+li a:hover {
+  color: var(--primary-shade-1);
+}
+
+.paragraph {
+  font-size: var(--fs-3);
   line-height: 1.2;
-  margin-bottom: 3.2rem;
-} */
+  color: var(--primary-shade-2);
+}
 
-.subheading {
+/* .subheading {
   display: block;
   font-size: 1rem;
   font-weight: 500;
-  color: #e67e22;
-  /* text-transform: uppercase; */
-  margin-bottom: 1.6rem;
+
   letter-spacing: 0.75px;
+} */
+
+:root {
+  --primary: #081d33;
+  --primary-tints-1: #071a2e;
+  --primary-tints-2: #061729;
+  --primary-shade-1: #213447;
+  --primary-shade-2: #394a5c;
+
+  --secondary: #a8badd;
+  --secondary-tints-1: #97a7c7;
+  --secondary-tints-2: #8695b1;
+  --secondary-shade-1: #b1c1e0;
+  --secondary-shade-2: #b9c8e4;
+
+  /* --tertary: #a8badd; */
+  --first: #1864ab;
+  --second: #f783ac;
+  --third: #63e6be;
+  --fourth: #3bc9db;
+  --fs-1: 1.4rem;
+  --fs-2: 1.0666667rem;
+  --fs-3: 1rem;
+  --h-lh: 1rem;
+  --p-lh: 1rem;
 }
 
-hr {
-  margin: 0;
-  padding: 0;
+/* ==========scrollbar for chat section =========================*/
+#myScrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-/* icon chat */
-/* <i class="fa-regular fa-comment-dots"></i> */
+input {
+  border: none;
+  outline: none;
+}
 
-/* activity chat  todo list icon */
-/* <i class="fa-regular fa-clipboard-list"></i> */
+::placeholder {
+  color: var(--primary-shade-1);
+  opacity: 0.7; /* Firefox */
+}
 
-/* setting icon */
-/* <i class="fa-regular fa-gear"></i> */
+/* #myScrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
 
-/* logout icon */
-/* <i class="fa-solid fa-arrow-right-from-bracket"></i> */
-
-/* user circle icon */
-/* <i class="fa-regular fa-circle-user"></i> */
-
-/* voice call icon
-<i class="fa-regular fa-phone"></i> */
-
-/* video call icon */
-/* <i class="fa-regular fa-video"></i> */
-
-/* atachement icon */
-/* <i class="fa-regular fa-paperclip"></i> */
-
-/* smily icon */
-/* <i class="fa-regular fa-face-smile"></i> */
-
-/* mice icon */
-/* <i class="fa-regular fa-microphone"></i> */
-
-/* speedo meter 
-<i class="fa-regular fa-gauge"></i> */
-
-/* 1st #DDE4F0 */
-/* 2nd #A8BADD */
-/* 3rd #03060C */
-/*4rth #1E3CBF */
-/* 5th #939DAE */
-/* 6th #485563 */
-/* 7n  #827896 */
+#myScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+} */
